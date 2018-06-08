@@ -37,6 +37,7 @@ I suggest following the naming convention Year (2 digits) Conference acronym (3-
 
 ## Step 2: Register the trusted timestamping service
 
+Follow the instructions on [the developer section on originstamp.org](https://originstamp.org/dev/git).
 
 ### Background Information 
 * From the legal domain, we use the trusted timestamping service opriginstamp.org to ensure the integrity of our data, software and to prove it's originality.
@@ -47,6 +48,7 @@ To prevent this from happening you can announce your change to a service that ce
 
 ## Step 3: Register the continuous integration service
 
+Follow the getting started instruction on [the travis website.](https://docs.travis-ci.com/user/getting-started)
 ### Background Information
 
 
@@ -56,13 +58,24 @@ To prevent this from happening you can announce your change to a service that ce
 
 ## Step 3: Write your paper
 
+Write your paper as you would usually do.
+Small commits, descriptive and gpg-signed commit messages help to understand your contribution to the paper, in the case of a dispute.
+
+You can use the [VMEXT2 paper repo](https://github.com/ag-gipp/18CicmVmext2) as a template to get the configuration setting how to make travis compile the your LaTeX paper for you. 
+### Background information
+
+With the _blame_ feature of git you can see who edited which lines of the file at last.
+Using the same method you can also find out who did the second last edit to this line and so on.
+Therefore, I recommend to start each sentence on a new line.
+
 ## Step 4: Make your preprint public
 
 ## Step 5: Register the publication service
 
 ## Step 6: Release a version and get a DOI
 
-## Step 7: Create a git repository
+## Step 7: (Optional) Link a TeX web editor
+
 
 
 
