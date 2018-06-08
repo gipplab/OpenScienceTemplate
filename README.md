@@ -33,7 +33,9 @@ I suggest following the naming convention Year (2 digits) Conference acronym (3-
 
 * Read more about all the features of git to improve your effectiveness when working in a team.
 
-* A fancy way to backup your public github projects is using the interplenatary filesystem IPFS.
+* A fancy way to backup your public github projects is using the interplenatary filesystem IPFS using services such as [mango,](https://github.com/axic/mango) [github-ipfs
+,](https://github.com/airalab/github-ipfs) or [git-remote-ipfs
+](https://github.com/cryptix/git-remote-ipfs).
 
 ## Step 2: Register the trusted timestamping service
 
@@ -70,12 +72,25 @@ Therefore, I recommend to start each sentence on a new line.
 
 ## Step 4: Make your preprint public
 
+If you want to get a DOI for and have long time archival for your paper, your paper needs to be public.
+On GitHub you can change from private to public by in the repository settings.
+You have to confirm this action by typing in the repository name.
+
 ## Step 5: Register the publication service
+
+Register the publication service zenodo, by following the advise on 
+ https://zenodo.org/account/settings/github/
 
 ## Step 6: Release a version and get a DOI
 
-## Step 7: (Optional) Link a TeX web editor
+After having integrated the zenodo service just create a new release on your github repository and a DOI is assigned to your preprint.
+This will be long time archived by a [project funded by the european union and cern](http://about.zenodo.org/).
 
+
+## Step 7: (Optional) Link a TeX web editor
+Since some of your colleagues might not be familar with LaTeX and GitHub etc. it might be easier for them use a online editor for LaTeX.
+Starting with version 2 overleaf provides the ability to work togehter on github hosted projects.
+The synchronization between github and overleaf is managed via pull-request.  
 
 
 
