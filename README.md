@@ -111,7 +111,9 @@ Since some of your colleagues might not be familiar with LaTeX and GitHub and ot
 Starting with [version 2](https://www.overleaf.com/blog/641-try-out-overleaf-v2#.WxpJGRyxWqM) overleaf provides the ability to work together on GitHub hosted projects.
 Pull requests syncronize between GitHub and overleaf.
 
+## Feedback and comments
 
+Feedback and comments on this post are possible via [github issues](https://github.com/ag-gipp/OpenScienceTemplate/issues), or by contacting the [author.](https://www.moritzschubotz.de)
 
 
 [1]: https://trends.google.com/trends/explore?date=2008-06-05%202018-06-05&q=%2Fm%2F025ttdm
