@@ -1,23 +1,26 @@
-# How to "abuse" OpenSource tools for OpenScience ![OpenScience logo](img/OpenScienceSmall.png)
+# Repurposing Open Source Tools ![OpenScience logo](img/OpenScienceSmall.png)
+
+# Or: a practical guide on how to "abuse" OpenSource tools for OpenScience!
 
 ''Open science'' is receiving an increasing amount of attention recently [[1]].
 For instance, the OpenAIRE project supports the European vision for open access and open data [[2]].
-Rather than discussing the theory, political and ethical implications of open science, this guide outlines, how you can do open science right now.
-To do this, we combine systems originating from the open source movement, the digital legal initiative, and first results of the open science movement itself.
-The main idea is to have a service dedicated for each of the various scientific tasks:
+Instead of only discussing the theory, or the political and ethical implications of open science, this guide outlines how you can do open science right now!
+In this practical guide, we propose the combination of existing tools and systems that originated from the open source movement, the digital legal initiative, or first results of the open science movement itself.
+
+The main idea is to dedicate one existing open source service to each of the various tasks in the scientific research cycle. We define the following scientific tasks, for each of which we propose the use of a corresponding service: 
 * document management --> [github](https://github.com)
 * proof of originality --> [originstamp](https://originstamp.org)
 * automation and objective execution --> [travis](https://travis.org)
 * longtime archival --> [zenodo](https://zenodo.org)
 
-In this 7 step guide, we will describe how to collaboratively write a paper in LaTeX and obtain your own DOI (Digital Object Identifier) in the end.
-In addition, we provide background information on the research tasks and services.
-Besides writing a paper, the procedures we describe can also be applied when plannig a user study, running a computer experiment or developing a research prototype of a software.
+In this 7-step guide, we will describe how to collaboratively write a research paper in LaTeX and subsequently obtain your own DOI (Digital Object Identifier) to securely verify your research contirbutions.  
+In addition, we provide background information on the individual research tasks and the open source services we view as being the most suitable.
+In addition to writing an academic research paper, the procedures we describe here can also be applied when plannig a user study, running a computer experiment, or developing a research prototype of a software.
 
 ## Step 1: Create a git repository
 
-The first step is to create a git repository.
-For GitHub navigate to
+The first step towards repursing open source tools to particiapte in open science research is to create a git repository.
+For GitHub navigate to:
 
  http://github.com/new/
 
@@ -31,22 +34,24 @@ This gets more complex the more people are involved, the longer the project peri
 
 * We use the __version control system__ git hosted on GitHub.com to manage our software, our documentation, our notes and the scientific text. GitHub.com has a large user base and excellent maintenance. However, any other git repository works as well, as long as you can guarantee that the data is adequately backed up and that the service is available to you and your contributors. We recommend installing a mirror for essential git projects to ensure data integrity.
 
-* If you want to start open science secretly, you might want to start with a private repository. Note, that GitHub provides free educational licenses [[3]].
+* If you want to start open science secretly, you might want to start with a private repository. GitHub provides free educational licenses [[3]].
 
 * To prove that you are the author of your commits, we recommend that you [sign each commit with your private key.](https://help.github.com/articles/signing-commits-using-gpg/)
 
-* Read [more]( https://help.github.com/) about all the features of git to improve your effectiveness when working in a team.
+* Read [more]( https://help.github.com/) about all features of git to improve your effectiveness when working in a team.
 
-* A fancy way to backup your public GitHub projects is by using the InterPlanetary File System (IPFS). Here services such as [mango,](https://github.com/axic/mango) [github-ipfs,](https://github.com/airalab/github-ipfs) or [git-remote-ipfs](https://github.com/cryptix/git-remote-ipfs) provide a convenient interface.
+* A fancy way to backup your public GitHub projects is by using the InterPlanetary File System (IPFS). For this, services such as [mango,](https://github.com/axic/mango) [github-ipfs,](https://github.com/airalab/github-ipfs) or [git-remote-ipfs](https://github.com/cryptix/git-remote-ipfs) provide a convenient interface.
 * The more repositories you have, the more important it becomes that you choose a meaningful name.
 We suggest following the naming convention Year (2 digits) Conference acronym (3-5 letters) Project name
 
-## Step 2: Register the trusted timestamping service
+## Step 2: Register the trusted timestamping service OriginStamp
 
-Follow the instructions on [the developer section of originstamp.org](https://originstamp.org/dev/git).
+By integrating originstamp you can automatically generate decentralized trusted timestamps, which are stored on Bitcoin's blockchain. These tamper-proof digital timestamps allow you to verifiably and permanently trace (on the blockchain) the time of existence of your individual research contributions, ideas, data, etc.
+
+To integrate OriginStamp into your own projects or research work flow, follow the instructions at: [the developer section of originstamp.org](https://originstamp.org/dev/git).
 
 ### Background Information
-* __Proof of originality__ means that the consortium of authors can prove that they had the research data at the time of writing the article.
+* __Proof of originality__ means that the consortium of authors can prove that they were in possession of the research data at a certain time, e.g. at the time of writing an article.
 
 * From the legal domain, we use the __trusted timestamping service__ opriginstamp.org to ensure the integrity of our data or software and to prove that data was not massaged or manipulated in retrospect. 
 
@@ -54,7 +59,7 @@ Follow the instructions on [the developer section of originstamp.org](https://or
 However, this information can be modified, since Git allows to rewrite the history.
 To prevent this from happening you can announce your change to a service that certifies that you authored it.
 
-* Currently, GIT uses the [SHA-1](https://en.wikipedia.org/wiki/SHA-1) to which is no longer considered as secure.
+* Currently, GIT uses the [SHA-1](https://en.wikipedia.org/wiki/SHA-1), which is no longer considered as secure.
 However, this will be [fixed](https://github.com/git/git/blob/master/Documentation/technical/hash-function-transition.txt) in future versions of GIT.  
 
 ## Step 3: Register the continuous integration service
