@@ -1,6 +1,4 @@
-# Repurposing Open Source Tools ![OpenScience logo](img/OpenScienceSmall.png)
-
-# Or: a practical guide on how to "abuse" OpenSource tools for OpenScience!
+# Repurposing Open Source Tools for Open Science ![OpenScience logo](img/OpenScienceSmall.png)
 
 ''Open science'' is receiving an increasing amount of attention recently [[1]].
 For instance, the OpenAIRE project supports the European vision for open access and open data [[2]].
@@ -15,11 +13,11 @@ The main idea is to dedicate one existing open source service to each of the var
 
 In this 7-step guide, we will describe how to collaboratively write a research paper in LaTeX and subsequently obtain your own DOI (Digital Object Identifier) to securely verify your research contirbutions.  
 In addition, we provide background information on the individual research tasks and the open source services we view as being the most suitable.
-In addition to writing an academic research paper, the procedures we describe here can also be applied when plannig a user study, running a computer experiment, or developing a research prototype of a software.
+In addition to writing an academic research paper, the procedures we describe here can also be applied when planning a user study, running a computer experiment, or developing a research prototype of a software.
 
 ## Step 1: Create a git repository
 
-The first step towards repursing open source tools to particiapte in open science research is to create a git repository.
+The first step towards repurposing open source tools to participate in open science research is to create a git repository.
 For GitHub navigate to:
 
  http://github.com/new/
@@ -32,7 +30,7 @@ and create the repository
  From the document management system, it should be possible to reproduce the research.
 This gets more complex the more people are involved, the longer the project period lasts, and the more external information is required.  
 
-* We use the __version control system__ git hosted on GitHub.com to manage our software, our documentation, our notes and the scientific text. GitHub.com has a large user base and excellent maintenance. However, any other git repository works as well, as long as you can guarantee that the data is adequately backed up and that the service is available to you and your contributors. We recommend installing a mirror for essential git projects to ensure data integrity.
+* We use the __version control system__ git hosted on GitHub.com to manage our software, our documentation, our notes, and the scientific text. GitHub.com has a large user base and excellent maintenance. However, any other git repository works as well, as long as you can guarantee that the data is adequately backed up and that the service is available to you and your contributors. We recommend installing a mirror for essential git projects to ensure data integrity.
 
 * If you want to start open science secretly, you might want to start with a private repository. GitHub provides free educational licenses [[3]].
 
@@ -48,7 +46,8 @@ We suggest following the naming convention Year (2 digits) Conference acronym (3
 
 By integrating originstamp you can automatically generate decentralized trusted timestamps, which are stored on Bitcoin's blockchain. These tamper-proof digital timestamps allow you to verifiably and permanently trace (on the blockchain) the time of existence of your individual research contributions, ideas, data, etc.
 
-To integrate OriginStamp into your own projects or research work flow, follow the instructions at: [the developer section of originstamp.org](https://originstamp.org/dev/git).
+To automatically integrate OriginStamp into your own GitHub projects and research workflow, follow the instructions at: 
+[the developer section of originstamp.org](https://originstamp.org/dev/git).
 
 ### Background Information
 * __Proof of originality__ means that the consortium of authors can prove that they were in possession of the research data at a certain time, e.g. at the time of writing an article.
@@ -62,18 +61,18 @@ To prevent this from happening you can announce your change to a service that ce
 * Currently, GIT uses the [SHA-1](https://en.wikipedia.org/wiki/SHA-1), which is no longer considered as secure.
 However, this will be [fixed](https://github.com/git/git/blob/master/Documentation/technical/hash-function-transition.txt) in future versions of GIT.  
 
-## Step 3: Register the continuous integration service
+## Step 3: Register the continuous integration service Travis CI
 
 Follow the getting started instruction on [the travis website.](https://docs.travis-ci.com/user/getting-started)
 ### Background Information
 
 * __Automation and objective execution__ in this case means being able to execute automated document management or computation tasks independent of a researcher's computer setup.
-The goal is to avoid side effects that are caused by the individual setup of a research computer system.
-While individually configured and installed computer systems are convenient, the results produced by these systems are hard to reproduce. 
+The goal is to prevent reproducibility issues that are caused by the unique setup of a researcher's computer system.
+While individually configured and installed computer systems are convenient, the results produced by these systems are hard to replicate.
 
-* We use Travis to test our software run scientific experiments to compile our scientific texts.
+* We use Travis CI to test our software run scientific experiments to compile our scientific texts.
 
-* A problem with this approach is that the centralized execution service Travis could be corrupted or stop functioning. As such, we advocate distributing the execution. For example, the Ethereum blockchain can execute code in the form of smart-contracts.
+* A problem with this approach is that the centralized execution service Travis could be corrupted or stop functioning. As such, we advocate distributing the execution. For example, the Ethereum blockchain can execute code in the form of smart contracts.
 
 ## Step 3: Write your paper
 
@@ -84,7 +83,7 @@ You can use the [VMEXT2 paper repo](https://github.com/ag-gipp/18CicmVmext2) as 
 ### Background information
 
 With the _blame_ feature of git, you can see who edited which lines of the file most recently.
-Using the same method you can also find out who did the second to last edit to a line and so on.
+Using the same method you can also find out who did the second-to-last edit to a line and so on.
 Therefore, we recommend beginning each sentence on a new line.
 
 ## Step 4: Make your preprint public
@@ -112,9 +111,9 @@ The task of __longtime archival__ deals with making the research results availab
  At the time of writing, we are not aware of any downsides with this service.  
 
 ## Step 7: (Optional) Link a TeX web editor
-Since some of your colleagues might not be as familiar with LaTeX and GitHub as others, it might be easier for some to use an online editor for LaTeX.
-Beginning with [version 2](https://www.overleaf.com/blog/641-try-out-overleaf-v2#.WxpJGRyxWqM), Overleaf now enables working together on GitHub hosted projects.
-Pull requests syncronize between GitHub and Overleaf.
+Since some of your colleagues might not be as familiar with LaTeX and GitHub as others, it might be easier for some to use an online editor for LaTeX, such as OverLeaf. 
+Beginning with [version 2](https://www.overleaf.com/blog/641-try-out-overleaf-v2#.WxpJGRyxWqM), Overleaf enables working together on GitHub hosted projects.
+Pull requests automatically syncronize between GitHub and Overleaf.
 
 ## Feedback and comments
 
