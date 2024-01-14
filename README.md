@@ -117,7 +117,7 @@ Pull requests automatically syncronize between GitHub and Overleaf.
 
 ## Feedback and comments
 
-Feedback and comments on this post are possible via [github issues](https://github.com/ag-gipp/OpenScienceTemplate/issues), or by contacting the [author.](https://www.moritzschubotz.de)
+Feedback and comments on this post are possible via [github issues](https://github.com/ag-gipp/OpenScienceTemplate/issues), or by contacting the [author.](https://schubotz.org)
 
 
 [1]: https://trends.google.com/trends/explore?date=2008-06-05%202018-06-05&q=%2Fm%2F025ttdm
